@@ -1,4 +1,17 @@
 {
-  "compilerOptions": {},
-  "extends": "expo/tsconfig.base"
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "rentsaathi/*"
+      ]
+    }
+  },
+  "include": [
+    "rentsaathi/**/*.ts",
+    "rentsaathi/**/*.tsx",
+    "rentsaathi/expo-env.d.ts",
+    "rentsaathi/.expo/types/**/*.ts"
+  ]
 }
